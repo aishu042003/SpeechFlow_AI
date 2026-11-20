@@ -1,0 +1,47 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploaded Audio
+data/uploads/*
+!data/uploads/.gitkeep
+
+# Reports
+reports/*
+!reports/.gitkeep
+
+# Model Files
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+
+# Logs and Temporary Files
+*.log
+*.tmp
+*.bak
+
+# IDE and OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
