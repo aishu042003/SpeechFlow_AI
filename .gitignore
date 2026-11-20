@@ -1,47 +1,88 @@
-# Virtual Environment
+
+# ==========================================
+# SpeechFlow AI - Git Ignore
+# ==========================================
+
+# Virtual Environments
 .venv/
 venv/
 env/
+ENV/
 
 # Python Cache
 __pycache__/
 *.py[cod]
+*$py.class
 .pytest_cache/
 .mypy_cache/
+.ruff_cache/
 
-# Secrets
+# Environment Variables and Secrets
 .env
 .env.*
 !.env.example
 .streamlit/secrets.toml
+secrets.toml
+*.pem
+*.key
 
-# Database
+# Hugging Face and API Credentials
+huggingface_token.txt
+hf_token.txt
+credentials.json
+
+# Database Files
 *.db
 *.sqlite
 *.sqlite3
 
-# Uploaded Audio
+# Uploaded Audio Files
 data/uploads/*
 !data/uploads/.gitkeep
 
-# Reports
+# Generated Reports
+data/reports/*
 reports/*
+!data/reports/.gitkeep
 !reports/.gitkeep
 
-# Model Files
+# Machine Learning Model Files
 *.pt
 *.pth
 *.bin
 *.safetensors
 *.onnx
+*.ckpt
+*.model
 
-# Logs and Temporary Files
+# Logs
 *.log
+logs/
+
+# Temporary Files
 *.tmp
 *.bak
+*.swp
+*.old
 
-# IDE and OS Files
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE Settings
 .vscode/
 .idea/
+*.code-workspace
+
+# Operating System Files
 .DS_Store
 Thumbs.db
+Desktop.ini
+
+# Build and Distribution
+build/
+dist/
+*.egg-info/
+
+# Coverage
+.coverage
+htmlcov/
